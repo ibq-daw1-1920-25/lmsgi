@@ -1,0 +1,33 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<emails xmlns = "http://www.lmsgi.net/correo_electronico"
+xmlns:thu = "http://www.lmsgi.net/thunderbird"
+xmlns:out = "http://www.lmsgi.net/outlook"
+xmlns:evo = "http://www.lmsgi.net/evolution">
+    <thu:correos gestor_correo = "thunderbird">
+        <thu:mensaje>
+            <thu:destinatario>Pedro</thu:destinatario>
+            <thu:origen>María</thu:origen>
+            <thu:asunto>Sin asunto</thu:asunto>    
+            <thu:cuerpo>Trabajo de LMSGI</thu:cuerpo>
+            <thu:adjunto>LMSGI_trabajo.pdf</thu:adjunto>
+        </thu:mensaje>
+    </thu:correos>
+    <out:correos gestor_correo = "outlook">
+        <out:mensaje>
+            <out:destinatario>Sofía</out:destinatario>
+            <out:origen>Daniel</out:origen>
+            <out:asunto>Fotos boda</out:asunto>    
+            <out:cuerpo>Quedaron preciosas, espero que las disfrutes.</out:cuerpo>
+            <out:adjunto>Fotos_boda.zip</out:adjunto>
+        </out:mensaje>
+    </out:correos>
+    <evo:correos gestor_correo = "evolution">
+        <evo:mensaje>
+            <evo:destinatario>Pedro</evo:destinatario>
+            <evo:origen>María</evo:origen>
+            <evo:asunto>Sin asunto</evo:asunto>    
+            <evo:cuerpo>Trabajo de LMSGI</evo:cuerpo>
+            <evo:adjunto>LMSGI_trabajo.pdf</evo:adjunto>
+        </evo:mensaje>
+    </evo:correos>
+</emails>

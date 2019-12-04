@@ -1,0 +1,96 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<alumnado xmlns = "http://www.lmsgi.net/alumnado"
+xmlns:num1 = "http://www.lmsgi.net/I.E.S_Numero_1"
+xmlns:avi = "http://www.lmsgi.net/C.I.F.P_Aviles"
+xmlns:doc = "http://www.lmsgi.net/I.E.S_Doctor_fleming"
+xmlns:ibq = "http://www.lmsgi.net/I.E.S_Bernaldo_de_Quiros"
+xmlns:indu = "http://www.lmsgi.net/C.I.F.P_Sectores_Industrial_Servicios"
+xmlns:sanch = "http://www.lmsgi.net/I.E.S_Sanchez_Lastra">
+    <num1:centro tipo = "IES Numero 1">
+        <num1:alumno>
+            <num1:apellidos>García Perez</num1:apellidos>
+            <num1:nombre>Ana</num1:nombre>
+            <num1:localidad>Gijón</num1:localidad>    
+        </num1:alumno>
+        <num1:alumno>
+            <num1:apellidos>Fernandez Uría</num1:apellidos>
+            <num1:nombre>Jose Luis</num1:nombre>
+            <num1:localidad>Gijón</num1:localidad>    
+        </num1:alumno>
+        <num1:alumno>
+            <num1:apellidos>Díaz del Olmo</num1:apellidos>
+            <num1:nombre>Belén</num1:nombre>
+            <num1:localidad>Gijón</num1:localidad>    
+        </num1:alumno>
+        <num1:alumno>
+            <num1:apellidos>Rodríguez Marqués</num1:apellidos>
+            <num1:nombre>Lucía</num1:nombre>
+            <num1:localidad>Gijón</num1:localidad>    
+        </num1:alumno>
+        <num1:alumno>
+            <num1:apellidos>Nava Domínguez</num1:apellidos>
+            <num1:nombre>Fernando</num1:nombre>
+            <num1:localidad>Gijón</num1:localidad>    
+        </num1:alumno>
+        <num1:alumno>
+            <num1:apellidos>García González</num1:apellidos>
+            <num1:nombre>Eva</num1:nombre>
+            <num1:localidad>Gijón</num1:localidad>    
+        </num1:alumno>
+        <num1:alumno>
+            <num1:apellidos>Criado Martínez</num1:apellidos>
+            <num1:nombre>Bernardo</num1:nombre>
+            <num1:localidad>Gijón</num1:localidad>    
+        </num1:alumno>
+    </num1:centro>
+    <avi:centro tipo = "CIFP Avilés">
+        <avi:alumno>
+            <avi:apellidos>Martín López</avi:apellidos>
+            <avi:nombre>Luisa</avi:nombre>
+            <avi:localidad>Avilés</avi:localidad>    
+        </avi:alumno>
+        <avi:alumno>
+            <avi:apellidos>Viejo Pérez</avi:apellidos>
+            <avi:nombre>Ernesto</avi:nombre>
+            <avi:localidad>Avilés</avi:localidad>    
+        </avi:alumno>
+    </avi:centro>
+    <doc:centro tipo = "IES Doctor Fleming">
+        <doc:alumno>
+            <doc:apellidos>González Rubiera</doc:apellidos>
+            <doc:nombre>Pedro</doc:nombre>
+            <doc:localidad>Oviedo</doc:localidad>    
+        </doc:alumno>
+    </doc:centro>  
+    <ibq:centro tipo = "IES Bernaldo de Quirós">
+         <ibq:alumno>
+            <ibq:apellidos>García del Riesgo</ibq:apellidos>
+            <ibq:nombre>Clara</ibq:nombre>
+            <ibq:localidad>Mieres</ibq:localidad>    
+        </ibq:alumno> 
+        <ibq:alumno>
+            <ibq:apellidos>Rodríguez Nieto</ibq:apellidos>
+            <ibq:nombre>Luciano</ibq:nombre>
+            <ibq:localidad>Mieres</ibq:localidad>    
+        </ibq:alumno> 
+    </ibq:centro>
+    <indu:centro tipo = "CIFP Sectores Industrial y de Servicios">
+        <indu:alumno>
+            <indu:apellidos>Gómez Lamela</indu:apellidos>
+            <indu:nombre>Javier</indu:nombre>
+            <indu:localidad>Gijón</indu:localidad>    
+        </indu:alumno> 
+        <indu:alumno>
+            <indu:apellidos>Álvarez Cortés</indu:apellidos>
+            <indu:nombre>Óscar</indu:nombre>
+            <indu:localidad>Gijón</indu:localidad>    
+        </indu:alumno> 
+    </indu:centro>
+    <sanch:centro tipo = "IES Sánchez Lastra">
+        <sanch:alumno>
+            <sanch:apellidos>Reigal Pérez</sanch:apellidos>
+            <sanch:nombre>Sofía</sanch:nombre>
+            <sanch:localidad>Mieres</sanch:localidad>    
+        </sanch:alumno> 
+    </sanch:centro>
+</alumnado>

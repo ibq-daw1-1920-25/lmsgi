@@ -1,0 +1,42 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<pizzeria xmlns = "http://www.lmsgi.net/pizzeria"
+xmlns:barb = "http://www.lmsgi.net/barbacoa"
+xmlns:haw = "http://www.lmsgi.net/hawaiana"
+xmlns:cuat = "http://www.lmsgi.net/cuatro_quesos"
+xmlns:marg = "http://www.lmsgi.net/margarita">
+    <barb:pizza tipo = "barbacoa">
+        <barb:ingredientes>
+            <barb:salsa>Barbacoa</barb:salsa>
+            <barb:primer_complemento>Pollo</barb:primer_complemento>
+            <barb:segundo_complemento>Bacon</barb:segundo_complemento>    
+            <barb:tercer_complemento>Jamón</barb:tercer_complemento>
+            <barb:cuarto_complemento>Ternera</barb:cuarto_complemento>
+        </barb:ingredientes>
+        <precio cantidad = "8.00"/>
+    </barb:pizza>
+    <haw:pizza tipo = "hawaiana">
+        <haw:ingredientes>
+            <haw:salsa>Tomate</haw:salsa>
+            <haw:primer_complemento>Mozzarella</haw:primer_complemento>
+            <haw:segundo_complemento>Jamón</haw:segundo_complemento>    
+            <haw:tercer_complemento>Piña</haw:tercer_complemento>
+            <haw:cuarto_complemento>Queso</haw:cuarto_complemento>
+        </haw:ingredientes>
+        <precio cantidad = "7.00"/>
+    </haw:pizza>    
+    <cuat:pizza tipo = "cuatro quesos">
+        <cuat:ingredientes>
+            <cuat:salsa>Tomate</cuat:salsa>
+            <cuat:primer_complemento>Mezcla de 4 quesos</cuat:primer_complemento>
+        </cuat:ingredientes>
+        <precio cantidad = "7.00"/>
+    </cuat:pizza>
+    <marg:pizza tipo = "margarita">
+        <marg:ingredientes>
+            <marg:salsa>Tomate</marg:salsa>
+            <marg:segundo_complemento>Jamón</marg:segundo_complemento>
+            <marg:cuarto_complemento>Queso</marg:cuarto_complemento>
+        </marg:ingredientes>
+        <precio cantidad = "7.00"/>
+    </marg:pizza>
+</pizzeria>            

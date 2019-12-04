@@ -1,0 +1,29 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<cursos xmlns = "http://www.lmsgi.net/cursos"
+xmlns:cxml = "http://www.lmsgi.net/curso_xml"
+xmlns:php = "http://www.lmsgi.net/curso_php">
+    <cxml:curso titulo = "XML">
+        <cxml:docentes>
+            <cxml:profesor>
+                <cxml:nombre>Manu</cxml:nombre>
+            </cxml:profesor>
+        </cxml:docentes>
+        <cxml:alumnos>
+            <cxml:nombre>Jorgito</cxml:nombre>
+            <cxml:nombre>Juanito</cxml:nombre>
+            <cxml:nombre>Jaimito</cxml:nombre>
+        </cxml:alumnos>    
+    </cxml:curso>
+    <php:curso titulo = "PHP">
+        <php:docentes>
+            <php:profesor>
+                <php:nombre>Luis</php:nombre>
+            </php:profesor>
+        </php:docentes>
+        <php:alumnos>
+            <php:nombre>Maria</php:nombre>
+            <php:nombre>Luisa</php:nombre>
+            <php:nombre>Marta</php:nombre>
+        </php:alumnos>    
+    </php:curso>
+</cursos>    
