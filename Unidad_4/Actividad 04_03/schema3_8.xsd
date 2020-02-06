@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+
+    <xs:element name="nombres" type="xs:string"/>
+    <xs:element name="apellidos" type="xs:string"/>
+    <xs:element name="titulo" type="xs:string"/>
+    <xs:element name="sello" type="xs:string"/>
+    <xs:element name="artista" type="xs:string"/>
+    <xs:element name="fecha" type="xs:date"/>
+
+    <xs:attribute name="duracion" type="xs:decimal" use="required"/>
+    <xs:attribute name="anio" type="xs:date" use="required"/>
+    <xs:attribute name="titulo" type="xs:string" use="required"/>
+
+    <xs:element name="compositor">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="nombres"/>
+                <xs:element ref="apellidos"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="productor">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="nombres"/>
+                <xs:element ref="apellidos"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="compositores">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="compositor" maxOcurrs="unbounded"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    
+    <xs:element name="productores">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="productor" maxOcurrs="unbounded"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+ 
+    <xs:element name="cancion">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="titulo"/>
+                <xs:element ref="compositores"/>
+                <xs:element ref="productores"/>
+                <xs:element ref="sello"/>
+                <xs:element ref="artista"/>
+            </xs:sequence>
+            <xs:attribute ref="duracion"/>
+            <xs:attribute ref="anio"/>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="songs">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="cancion" maxOcurrs="unbounded"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="cd">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="songs" />
+                <xs:element ref="fecha" />
+            </xs:sequence>
+            <xs:attribute ref="titulo"/>
+        </xs:complexType>
+    </xs:element>
+
+</xs:schema>

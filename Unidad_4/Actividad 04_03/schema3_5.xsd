@@ -1,0 +1,29 @@
+<!--ELEMENT cv (presentacion, datos_academicos+, 
+experiencia_laboral+, lectura*, deportes*, otros*, referencias*)-->
+
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+
+    <xs:element name="presentacion" type="xs:string" />
+    <xs:element name="datos_academicos" type="xs:string" />
+    <xs:element name="experiencia_laboral" type="xs:string" />
+    <xs:element name="lectura" type="xs:string" />
+    <xs:element name="deportes" type="xs:string" />
+    <xs:element name="otros" type="xs:string" />
+    <xs:element name="referencias" type="xs:string" />
+
+     <xs:element name="cv">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="presentacion" />
+                <xs:element ref="datos_academicos" maxOccurs="unbounded" />
+                <xs:element ref="experiencia_laboral" maxOccurs="unbounded" />
+                <xs:element ref="lectura" minOccurs="0" maxOccurs="unbounded" />
+                <xs:element ref="deportes" minOccurs="0" maxOccurs="unbounded" />
+                <xs:element ref="otros" minOccurs="0" maxOccurs="unbounded" />
+                <xs:element ref="referencias" minOccurs="0" maxOccurs="unbounded" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+</xs:schema>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+
+    <xs:element name="TITULO" type="xs:string" />
+    <xs:element name="AUTOR" type="xs:string" />
+    <xs:element name="EMAIL" type="xs:string" />
+    <xs:element name="VERSION" type="xs:string" />
+    <xs:element name="FECHA" type="xs:date" />
+    <xs:element name="QTEXT" type="xs:string" />
+    <xs:element name="A" type="xs:string" />
+
+    <xs:attribute name="id" type="codigo" use="required"/>
+    <xs:attribute name="number" type="codigo" use="required"/>
+
+    <xs:element name="INFO">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="TITULO"/>
+                <xs:element ref="AUTOR"/>
+                <xs:element ref="EMAIL"/>
+                <xs:element ref="VERSION"/>
+                <xs:element ref="FECHA"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="Q">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="QTEXT"/>
+                <xs:element ref="A"/>
+            </xs:sequence>
+            <xs:attribute ref="id"/>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="PART">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="Q" maxOcurrs="unbounded"/>
+            </xs:sequence>
+            <xs:attribute ref="number"/>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="FAQ">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="INFO"/>
+                <xs:element ref="PART"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+</xs:schema>
+
+

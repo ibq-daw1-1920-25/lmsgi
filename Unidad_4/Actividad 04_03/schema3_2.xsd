@@ -1,0 +1,22 @@
+<!-- <!ELEMENT receta (titulo, ingrediente+, procedimiento+, tiempo?)> -->
+
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+
+    <xs:element name="titulo" type="xs:string" />
+    <xs:element name="ingrediente" type="xs:string" />
+    <xs:element name="procedimiento" type="xs:string" />
+    <xs:element name="tiempo" type="xs:string" />
+
+    <xs:element name="receta">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="titulo" />
+                <xs:element ref="ingrediente" maxOccurs="unbounded"/>
+                <xs:element ref="procedimiento" maxOccurs="unbounded"/>
+                <xs:element ref="tiempo" minOccurs="0"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    
+</xs:schema>
