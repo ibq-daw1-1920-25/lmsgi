@@ -1,0 +1,25 @@
+
+			h1, h2 { 
+				color: #FF0000; 
+				font-weight: 32px; 
+				font-family: Verdana, Calibri, sans-serif; 
+				}
+			h2 { 
+				color: #AA0000; 
+				font-weight: 24px; 
+				}
+	
+			body { 
+				color: #0000FF;  
+				font-weight: 16px; 
+				font-family: Georgia, Cambria, serif; 
+				background-color: #CCFFCC; 
+				}
+
+			span { color: #006600; }
+
+			strong { font-weight: 20px; }
+
+			em {color: #FFF; background: #000; }
+	
+	

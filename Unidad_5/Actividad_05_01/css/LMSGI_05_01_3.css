@@ -1,0 +1,33 @@
+	
+	body {
+		width: 960px;
+		text-align:left;
+	}
+
+	h1 {
+		text-align:center;
+	}
+
+	#datos, #descripcion {
+				float: left;
+				padding:30;
+				margin: 30;
+	}
+
+	#datos {
+		width:260px;
+	}
+	
+	#descripcion {
+			width: 700px;
+	}
+
+	#contenido {
+			list-style-type: none;
+			padding: 0;
+	}
+
+	#contenido li {
+			float:left;
+			width: 33%;
+	}
