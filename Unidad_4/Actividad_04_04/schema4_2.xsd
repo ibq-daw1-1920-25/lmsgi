@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+elementFormDefault="qualified">
+
+    <!-- DEFINICIÓN DE LOS ELEMENTOS SIMPLES -->
+
+    <xs:element name="nombre" type="xs:string" />
+    <xs:element name="apellidos" type="xs:string" />
+
+    <xs:element name="nota">
+        <xs:simpleType>
+            <xs:union>
+                <xs:simpleType>
+                    <xs:restriction base="xs:decimal">
+                        <xs:minInclusive value="0" />
+                        <xs:maxInclusive value="10" />
+                        <xs:fractionDigits value="2"/>
+                    </xs:restriction>    
+                </xs:simpleType>  
+                <xs:simpleType>
+                    <xs:restriction base="xs:string"> 
+                        <xs:enumeration value="No presentado" />
+                    </xs:restriction>
+                </xs:simpleType>   
+            </xs:union>
+        </xs:simpleType>
+    </xs:element> 
+
+    <xs:element name="edad" type="xs:integer" />
+    <xs:element name="comentario" type="xs:string" />
+    <xs:element name="calle" type="xs:string" />
+    <xs:element name="numero" type="xs:integer" />
+    <xs:element name="piso" type="xs:string" />
+    <xs:element name="poblacion" type="xs:string" />
+    <xs:element name="codigo postal" type="xs:integer" />
+
+    <!-- DEFINICIÓN DE LOS ATRIBUTOS -->
+
+    <xs:attribute name="dni" type="xs:string" />
+
+    <!-- DEFINICIÓN DE LOS ELEMENTOS COMPLEJOS -->
+
+    <xs:element name="alumno">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="nombre"/>
+                <xs:element ref="apellidos"/>
+                <xs:element ref="nota"/>
+                <xs:element ref="edad" minOccurs="0"/>
+                <xs:element ref="comentario"/>
+                <xs:element ref="calle" minOccurs="0"/>
+                <xs:element ref="piso" minOccurs="0"/>
+                <xs:element ref="poblacion" minOccurs="0"/>
+                <xs:element ref="codigo postal" minOccurs="0"/>
+            </xs:sequence>
+            <xs:attribute ref="dni"/>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="datos">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="alumno" maxOccurs="unbounded"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

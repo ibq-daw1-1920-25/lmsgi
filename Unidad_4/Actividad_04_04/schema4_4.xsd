@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+elementFormDefault="qualified">
+
+    <!-- DEFINICIÓN DE LOS ELEMENTOS SIMPLES -->
+
+    <xs:element name="nombre" type="xs:string" />
+    <xs:element name="lados" type="xs:integer" />
+    <xs:element name="base" type="xs:decimal" />
+    <xs:element name="altura" type="xs:decimal" />
+    <xs:element name="radio" type="xs:decimal" />
+
+        <!-- DEFINICIÓN DE LOS ATRIBUTOS -->
+        
+    <xs:element>
+        <xs:simpleType>
+               <xs:attribute name="colorHex">
+                    <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                            <xs:pattern value="[0-9][A-F]"/>
+                        </xs:restriction>
+                    </xs:simpleType>   
+                </xs:attribute> 
+            </xs:simpleType>
+    </xs:element>
+
+    <xs:element>
+        <xs:simpleType>
+               <xs:attribute name="tipoMime">
+                    <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                            <xs:pattern value="[gif\png\jpg]"/>
+                        </xs:restriction>
+                    </xs:simpleType>   
+                </xs:attribute> 
+            </xs:simpleType>
+    </xs:element>
+
+        <!-- DEFINICIÓN DE LOS ELEMENTOS COMPLEJOS -->
+
+    <xs:element name="figura">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="nombre"/>
+                <xs:element ref="lados" minOccurs="0" />
+                <xs:element ref="base" minOccurs="0" />
+                <xs:element ref="altura" minOccurs="0"/>
+                <xs:element ref="radio" minOccurs="0"/>
+            </xs:sequence>
+            <xs:attribute ref="colorHex"/>
+            <xs:attribute ref="tipoMime"/>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="figurasgeometricas">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="figura" maxOccurs="unbounded"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+</xs:schema>
+

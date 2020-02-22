@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<figurasgeometricas xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:noNamespaceSchemaLocation="schema4_4.xsd">
+
+    <figura color="FF0000" imagen="image.gif">
+        <nombre> Rectángulo </nombre>
+        <lados> 4 </lados>
+        <base> B </base>
+        <altura> A </altura>
+    </figura>
+
+    <figura colorHex="0000FF" tipoMime="image.png">
+        <nombre> Círculo </nombre>
+        <radio> R </radio>
+    </figura>
+
+    <figura color="00BB2D" imagen="image.jpg">
+        <nombre> Triángulo </nombre>
+        <lados> 3 </lados>
+        <base> B </base>
+        <altura> A </altura>
+    </figura>
+
+</figurasgeometricas>    
