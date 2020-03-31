@@ -1,0 +1,53 @@
+﻿body { 
+		color: red; 
+		background-color: #b9b9b9;
+		font-family: calibri;
+		font-weight: 16px;	
+		margin-left: 150px;
+		margin-right: 150px;
+	 }
+	
+
+	ul {
+		font-size: 12px;
+		font-family: Arial;
+		background: purple;
+		width: 150px;
+	}
+
+	li { 
+		border: 1px solid white;
+		padding: 5px;
+	}
+		
+	h1 {
+		font-size: 24px;
+		color: white;
+		font-family: Comic Sans MS;
+		word-spacing: 35px;
+		border-color: red;
+		border-width: 4px;
+		border-style: solid;
+		padding-left: 5px;
+		padding-bottom: 5px;
+	}	 
+		
+		
+	p {
+		background: #8A840F;
+		width: 200px;
+		font-family: Arial Narrow;
+		font-size: 16px;
+		text-align:center;
+		border: 8px solid blue;
+		padding: 5px;
+	}
+	
+	h3 {	
+		font-style: italic;
+		font-family: Arial Black;
+		font-size: 14px;
+		text-align: right;
+		text-transform: uppercase;
+	}
+				

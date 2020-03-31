@@ -1,0 +1,48 @@
+﻿
+	body { 
+		color: red; 
+		background-color: #b9b9b9;
+		font-family: calibri;
+		font-weight: 16px;	
+	 }
+	
+
+	ul {
+		font-size: 12px;
+		font-family: Arial;
+		background: purple;
+		width: 150px;
+	}
+		
+	h1 {
+		font-size: 24px;
+		color: white;
+		font-family: Comic Sans MS;
+		word-spacing: 35px;
+	}	 
+		
+		
+	p {
+		background: #6F7C20;
+		width: 200px;
+		font-family: Arial Narrow;
+		font-size: 16px;
+		text-align:center;
+	}
+	
+	h3 {	
+		font-style: italic;
+		font-family: Arial Black;
+		font-size: 14px;
+		text-transform: uppercase;
+	}
+				
+
+
+
+
+
+
+
+
+	
