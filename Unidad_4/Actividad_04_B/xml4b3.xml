@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE cv [
+    <!ELEMENT cv (presentacion, (datos_academicos | experiencia_laboral)+, 
+(lectura|deportes|otros)*, referencias*)>
+
+    <!-- En este DTD, vemos que el elemento "presentacion" debe aparecer en los datos del XML.
+     También vemos dos opciones disponibles entre "datos_academicos" y "experiencia_laboral"
+     (con el simbolo "+"). Esto quiere decir que al menos una de las dos opciones debe aparecer
+     en el documento. 
+     Lo mismo ocurre con los elementos "lectura", "deportes" y "otros", en los que también se debe
+     escoger entre uno de ellos, pudiendo aparecer de 0 a N veces.
+     Finalmente, vemos que el elemento "referencias" puede aparecer de 0 a N veces dentro del documento.
+    -->
+
+    <!ELEMENT presentacion (#PCDATA)>
+    <!ELEMENT datos_academicos (#PCDATA)>
+    <!ELEMENT experiencia_laboral (#PCDATA)>
+    <!ELEMENT lectura (#PCDATA)>
+    <!ELEMENT deportes (#PCDATA)>
+    <!ELEMENT otros (#PCDATA)>
+    <!ELEMENT referencias (#PCDATA)>
+]>
+
+<cv>
+    <presentacion>
+        María Castro
+        mcastro@gmail.com
+        C/ Gran Vía
+    </presentacion>
+    <experiencia_laboral>
+        2012 - 2013: Niñera en casa de familia.
+    </experiencia_laboral>
+    <otros>
+        Idiomas: ingles y frances.
+    </otros>
+    <otros></otros>
+    <referencias>
+        Responsibilidad y seriedad.
+    </referencias>
+    <referencias>
+        Buena voluntad y ganas de trabajar.
+    </referencias>
+</cv>
