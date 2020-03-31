@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Carpinteros xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:noNamespaceShemaLocation="Carpinteros.xsd">
+
+    <pedido>
+        <sucursal>
+            <nombre_sucursal> Maderas S.A </nombre_sucursal>
+            <direccion_exposicion> C/ Gran Vía, 21 </direccion_exposicion>
+            <direccion_gestion> C/ San Bernardo, 12 </direccion_gestion>
+            <codigo_pedido> A1234567 </codigo_pedido>
+	        <nombre_trabajador> Federico García </nombre_trabajador>
+	        <fecha_pedido> 18/01/2020 </fecha_pedido>
+	        <observaciones_pedido> Urgente </observaciones_pedido>
+	        <plazo_revision> 5 días </plazo_revision>
+	        <articulo>
+                <codigo_articulo> ASD-098 </codigo_articulo>
+                <numero_unidades> 30 </numero_unidades>
+                <precio_unidad> 100 </precio_unidad>
+                <observaciones_articulo> Fragil </observaciones_articulo>
+	        </articulo>
+        </sucursal>
+        <sucursal>
+            <nombre_sucursal> Serruchos S.A </nombre_sucursal>
+            <direccion_exposicion> C/ Cabrales, 77 </direccion_exposicion>
+            <direccion_gestion> Avda. La Paz  </direccion_gestion>
+            <codigo_pedido> Z0987654 </codigo_pedido>
+	        <nombre_trabajador> Marta Sánchez </nombre_trabajador>
+	        <fecha_pedido> 03/12/2019 </fecha_pedido>
+	        <observaciones_pedido> Incompleto </observaciones_pedido>
+	        <plazo_revision> 10 días </plazo_revision>
+	        <articulo>
+                <codigo_articulo> ZXC-123 </codigo_articulo>
+                <numero_unidades> 50 </numero_unidades>
+                <precio_unidad> 200 </precio_unidad>
+                <observaciones_articulo> Reparar los defectuosos </observaciones_articulo>
+	        </articulo>
+        </sucursal>
+    </pedido>
+
+</Carpinteros>

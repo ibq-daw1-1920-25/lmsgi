@@ -1,0 +1,56 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<xs:schema xmlns:xs = "http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" >
+
+    <!-- DEFINICIÓN DE ELEMENTOS SIMPLES -->
+
+    <xs:element name="codigo_articulo" type="xs:string" />
+    <xs:element name="numero_unidades" type="xs:integer" />
+    <xs:element name="precio_unidad" type="xs:integer" />
+    <xs:element name="obervaciones_articulo" type="xs:string" />
+    <xs:element name="nombre_sucursal" type="xs:string" />
+    <xs:element name="direccion_exposicion" type="xs:string" />
+    <xs:element name="direccion_gestion" type="xs:string" />
+    <xs:element name="codigo_pedido" type="xs:string" />
+    <xs:element name="nombre_trabajador" type="xs:string" />
+    <xs:element name="fecha_pedido" type="xs:date" />
+    <xs:element name="obervaciones_pedido" type="xs:string" />
+    <xs:element name="plazo_revision" type="xs:string" />
+
+    <!-- NO HAY ATRIBUTOS, ASI QUE DEFINIMOS LOS ELEMENTOS COMPLEJOS --> 
+
+    <xs:element name="articulo">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element ref="codigo_articulo" />
+            <xs:element ref="numero_unidades" />
+            <xs:element ref="precio_unidad" />
+            <xs:element ref="obervaciones_articulo" />
+          </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    
+    <xs:element name="sucursal">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="nombre_sucursal" />
+                <xs:element ref="direccion_exposicion" />
+                <xs:element ref="direccion_gestion" />
+                <xs:element ref="codigo_pedido" />
+                <xs:element ref="nombre_trabajador" />
+                <xs:element ref="fecha_pedido" />
+                <xs:element ref="obervaciones_pedido" />
+                <xs:element ref="plazo_revision" />
+                <xs:element ref="articulo" maxOccurs="unbounded"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:element name="pedido">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="sucursal" maxOccurs="unbounded" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+</xs:schema>
