@@ -1,0 +1,31 @@
+body {
+    font-size: 1em;
+    line-height: 1.3em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+    color: #555;
+}
+
+#principal p {
+    color: #336699;
+}
+
+a {
+    color: #CC3300;
+}
+
+#principal em {
+    background-color: #FFFFCC;
+}
+
+.divisor em {
+    background-color: #FFCC99;
+    border: solid;
+    border-color: #FF9900;
+}
+
+.divisor span {
+    font-weight: bold;
+}
